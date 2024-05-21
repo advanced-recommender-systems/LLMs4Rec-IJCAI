@@ -1,0 +1,435 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <title>Recommender Systems in the Era of Large Language Models (LLMs)</title>
+
+    <!-- favicon 
+    <link href="favicon.png" rel=icon>-->
+
+    <!-- web-fonts -->
+    <link href='https://fonts.googleapis.com/css?family=Roboto:210,300,400,700,500' rel='stylesheet' type='text/css'>
+
+    <!-- Bootstrap -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Style CSS -->
+    <link href="css/style.css" rel="stylesheet">
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+    <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+    <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+</head>
+<body id="page-top" data-spy="scroll" data-target=".navbar">
+<div id="main-wrapper">
+    <!-- Page Preloader -->
+    <div id="preloader">
+        <div id="status">
+            <div class="status-mes"></div>
+        </div>
+    </div>
+
+    <header class="header">
+        <!-- Navigation -->
+        <nav class="navbar main-menu" role="navigation">
+            <div class="container">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-main-collapse">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand page-scroll" href="#page-top"><img src="img/logo.jpg" height="40" alt=""></a>
+                </div>
+
+                <!-- Collect the nav links, forms, and other content for toggling -->
+                <div class="collapse navbar-collapse navbar-right navbar-main-collapse">
+                    <ul class="nav navbar-nav">
+                        <!-- Hidden li included to remove active class from about link when scrolled up past about section -->
+                        <li class="hidden"><a href="#page-top"></a></li>
+                        <li><a class="page-scroll" href="#section-intro">Intro</a></li>
+                        <!-- <li><a class="page-scroll" href="#section-cfp">Cfp</a></li>
+                        <li><a class="page-scroll" href="#section-date">DATES</a></li>
+                        <li><a class="page-scroll" href="#section-ajenda">Program</a></li>
+                        <li><a class="page-scroll" href="#section-speaker">Speakers</a></li>
+                        <li><a class="page-scroll" href="#section-papers">Accepted Papers</a></li>-->
+                        <li><a class="page-scroll" href="#section-overview">Overview</a></li>
+                        <li><a class="page-scroll" href="#section-speaker">Speakers</a></li>
+                    </ul>
+                </div>
+                <!-- /.navbar-collapse -->
+            </div>
+            <!-- /.container -->
+        </nav>
+
+        <!-- .nav -->
+
+    </header>
+
+    <div class="jumbotron text-center">
+        <div class="content">
+            <h1>Recommender Systems in the Era of Large Language Models (LLMs)</h1>
+	    <h2 style="color:#FFFFFF;"><b>Keywords: Recommender Systems, Large Language Models(LLMs), Pre-training and Fine-tuning, In-context Learning, Prompting</b> </h2>
+	    <h2 style="color:#FFFFFF;"><b>Event Date: December 3rd (Day 3), 10:00 AM - 12:00 AM (UTC+8, Beijing Time)</b> </h2>
+        <h2 style="color:#FFFFFF;"><b>Address: Room 6, ICDM 2023, Shanghai, China</b> </h2>
+	    <!-- <h2 style="color:#FFFFFF;"><b>Event Date: 4:45 PM - 6:15 PM (Beijing Time) or 10:45 AM - 12:15 PM (CEST Time), Tue. Apr 26, 2022 </b> </h2>-->
+	    <h2 style="color:#FFFFFF;"><b>Zoom ID: 91649466943 Password: 202312</a> </b> </h2> 
+
+	    	    <h2 style="color:#FFFFFF;"><b>Our Survey Paper: <a href="https://arxiv.org/pdf/2307.02046.pdf"> A Comprehensive Survey on LLM-based Recommender Systems
+</a> </b> </h2>
+
+	    
+	    
+	    
+
+
+	    
+	    
+            <!--<div class="event-date">9:00 - 11:45 PM, April 16, 2021 (EST time)</div>-->
+	     <!--
+	    <h2 style="color:#FFFFFF;"><b>Zoom Link:  <a href="https://TBD">TBD </a ></b> </h2>
+
+		<h2 style="color:#FFFFFF;"><b>Introduction to Deep Recommender System (DRS)</b> </h2>
+	    <h2 style="color:#FFFFFF;"><b>Preliminary of Automated Machine Learning (AutoML)</b> </h2>
+	    <h2 style="color:#FFFFFF;"><b>AutoML for DRS Embedding Components</b> </h2>
+	    <h2 style="color:#FFFFFF;"><b>AutoML for DRS Interaction Components</b> </h2>
+	    <h2 style="color:#FFFFFF;"><b>AutoML for Whole DRS Architecture Search</b>  </h2>
+            <h2 style="color:#FFFFFF;"><b>Conclusion and Future Direction</b>  </h2>
+            
+	    -->
+	    <!--<h2 style="color:#0F1555;"><b><a href="https://msu.zoom.us/j/94465359383">Zoom Link to Tutorial</a></b></h2>-->
+            <!--<div class="event-date">Summit 1 - Ground Level, Egan, Anchorage, Alaska - USA</div>
+            <!--<p class="lead">It's a tag line, where you can write a key point of your idea. It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.</p>
+            <button type="button" class="btn btn-default btn-lg">STAY IN THE LOOP</button>-->
+        </div>
+    </div>
+    <!-- .Jumbotron-->
+    
+    
+    <!-- Introduction Section -->
+    <section id="section-intro" class="section-wrapper about-event">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <h1>INTRO</h1>
+                </div>
+            </div>
+            <div class="row text-justify">
+                <div class="col-md-12">
+                   
+			<p class="large text-muted">
+			    With the prosperity of e-commerce and web applications, Recommender Systems (RecSys) have become an important component in our daily life, providing personalized suggestions that cater to user preferences. While Deep Neural Networks (DNNs) have made significant advancements in enhancing recommender systems by modeling user-item interactions and incorporating their textual side information, these DNN-based methods still have some limitations, such as difficulties in effectively understanding users’ interests and capturing textual side information, inabilities in generalizing to various seen/unseen recommendation scenarios and reasoning on their predictions, etc.
+			</p>
+                    
+		<p class="large text-muted">
+		
+            Meanwhile, the emergence of Large Language Models (LLMs), such as ChatGPT and GPT4, has revolutionized the fields of Natural Language Processing (NLP) and Artificial Intelligence (AI), due to their remarkable abilities in fundamental responsibilities of language understanding and generation, as well as impressive generalization and reasoning capabilities. As a result, recent studies have attempted to harness the power of LLMs to enhance recommender systems. 
+			
+		</p>
+		
+		<p class="large text-muted">
+			
+            Given the rapid evolution of this research direction in recommender systems, there is a pressing need for a systematic overview that summarizes existing LLM-empowered recommender systems, so as to provide researchers and practitioners in relevant fields with an in-depth understanding. Therefore, in this survey, we conduct a comprehensive review of LLM-empowered recommender systems from various aspects including Pre-training, Fine-tuning, and Prompting. More specifically, we first introduce representative methods to harness the power of LLMs (as a feature encoder) for learning representations of users and items. Then, we review recent advanced techniques of LLMs for enhancing recommender systems from three paradigms, namely pre-training, fine-tuning, and prompting. Finally, we comprehensively discuss the promising future directions in this emerging field.
+			
+			
+		</p>
+		
+		<p class="large text-muted">
+				
+		<!-- <div> Time: 4:45 PM - 6:15 PM (Beijing Time) or 10:45 AM - 12:15 PM (CEST Time), Tue. Apr 26, 2022</div> 
+		
+		<div>Zoom Link: <a href="https://acm-org.zoom.us/j/99041282188?pwd=aUhCOTd3djdBM3F5QURLZnRlV210UT09">https://acm-org.zoom.us/j/99041282188?pwd=aUhCOTd3djdBM3F5QURLZnRlV210UT09</a> </div>
+		-->	
+		<div>Our Survey Paper: <a href="https://arxiv.org/pdf/2307.02046.pdf"> A Comprehensive Survey on LLM-based Recommender Systems
+</a></div>
+
+        <!-- <div>Our Slides: <a href="doc/IJCAI_slides.pdf">Trustworthy recommender systems: foundations and frontiers-->
+        <div>Our Slides: <a href="doc/RecSys+LLMs.pdf">(Click Here To Download!)Recommender Systems in the Era of Large Language Models (LLMs)</a> </div>
+        </a>
+	    <div>Tutorial Website: <a href="https://advanced-recommender-systems.github.io/llms_rec_tutorial/">https://advanced-recommender-systems.github.io/llms_rec_tutorial/</a> </div>
+
+			
+		</p>	
+		    
+		<!-- <h2 style="color:black;"><b>Tutorial Syllabus <a href="http://shorturl.at/ELO69">[Slides]</a> <a href="http://shorturl.at/ELO69"> [Video]</a></b> </h2> -->
+			
+		<!-- <div>Our Survey Paper: <a href="https://arxiv.org/pdf/2209.10117.pdf"> A Comprehensive Survey on Trustworthy Recommender Systems 
+</a></div>  -->
+		<p class="large text-muted">
+		The topics of this tutorial include (but are not limited to) the following:
+		<ol>	
+			<strong> <li style="color:black;">Introduction to LLM-based Recommender Systems </li>  </strong>
+			<strong> <li style="color:black;">Preliminaries of Recommender Systems and LLMs </li></strong>
+			<strong> <li style="color:black;">Pre-training LLM-based Recommender Systems </li></strong>
+			<strong> <li style="color:black;">Fine-tuning LLM-based Recommender Systems </li></strong>
+			<strong> <li style="color:black;">Prompting LLM-based Recommender Systems </li></strong>
+			<strong> <li style="color:black;">Dimension Interactions & Future Directions </li></strong>
+			
+		</ol>
+
+
+	      
+	     
+
+
+
+		</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+
+	
+	
+	
+
+    <section id="section-overview" class="section-wrapper team gray-bg">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="section-title">
+                        <h1>The applications of LLMs for various recommendation tasks in the scenario of movie recommendation</h1>
+                    </div>
+                </div>
+            </div>
+		
+            <div class="row">
+		    
+		 <!--  <div class="col-sm-6 col-md-3"> -->
+                    <figure class="image">
+                        <a href="img/LLMs_tasks.pdf"><img src="img/LLMs_tasks.png" class="img-responsive" alt="Image" style="text-align: center;"></a>
+                        <figcaption class="caption text-center">
+				
+                        <!--    <h3>Xiangyu Zhao.   -->
+                        <!--    <small>City University of Hong Kong</small>     --> 
+                            </h3>
+                            <ul class="social-links">
+                                <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                                <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                                <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
+                                <li><a href="#"><i class="fa fa-envelope"></i></a></li>
+                            </ul>
+                        </figcaption>
+                    </figure>
+             <!--   </div>  -->
+                <!-- /.col-sm-6 -->
+		    
+		<!--   
+                <div class="col-sm-6 col-md-3">
+                    <figure class="thumbnail">
+                        <a href="https://wenqifan03.github.io/"><img src="img/wenqi2.jpg" class="img-responsive" alt="Image"></a>
+                        <figcaption class="caption text-center">
+                            <h3>Wenqi Fan
+                                <small>Hong Kong Polytechnic University</small>
+                            </h3>
+                            <ul class="social-links">
+                                <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                                <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                                <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
+                                <li><a href="#"><i class="fa fa-envelope"></i></a></li>
+                            </ul>
+                        </figcaption>
+                    </figure>
+                </div> -->
+                <!-- /.col-sm-6 -->
+
+		    
+		    <!--
+                 <div class="col-sm-6 col-md-3">
+                    <figure class="thumbnail">
+                        <a href="https://scholar.google.com/citations?user=jlBcPn8AAAAJ"><img src="img/huifeng.jpeg" class="img-responsive" alt="Image"></a>
+                        <figcaption class="caption text-center">
+                            <h3>Huifeng Guo
+                                <small>Huawei Noah’s Ark Lab</small>
+                            </h3>
+                            <ul class="social-links">
+                                <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                                <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                                <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
+                                <li><a href="#"><i class="fa fa-envelope"></i></a></li>
+                            </ul>
+                        </figcaption>
+                    </figure>
+                </div> -->
+                <!-- /.col-sm-6 -->               
+                
+         </div>
+         <!-- .row -->
+		
+		
+	<!-- <div class="row">           -->
+                <!--
+                <div class="col-sm-6 col-md-3">
+                    <figure class="thumbnail">
+                        <a href="https://scholar.google.com/citations?user=RZU1wxsAAAAJ"><img src="img/ChenBo2.jpeg" class="img-responsive" alt="Image"></a>
+                        <figcaption class="caption text-center">
+                            <h3>Bo Chen
+                                <small>Huawei Noah’s Ark Lab</small>
+                            </h3>
+                            <ul class="social-links">
+                                <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                                <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                                <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
+                                <li><a href="#"><i class="fa fa-envelope"></i></a></li>
+                            </ul>
+                        </figcaption>
+                    </figure>
+                </div> -->
+                <!-- /.col-sm-6 -->               
+                
+
+		<!--
+                <div class="col-sm-6 col-md-3">
+                    <figure class="thumbnail">
+                        <a href="."><img src="img/yejing.jpeg" class="img-responsive" alt="Image"></a>
+                        <figcaption class="caption text-center">
+                            <h3>Yejing Wang
+                                <small>City University of Hong Kong</small>
+                            </h3>
+                            <ul class="social-links">
+                                <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                                <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                                <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
+                                <li><a href="#"><i class="fa fa-envelope"></i></a></li>
+                            </ul>
+                        </figcaption>
+                    </figure>
+                </div> -->
+                <!-- /.col-sm-6 -->
+	   
+		
+		
+		
+		<!--
+	   <div class="col-sm-6 col-md-3">
+                    <figure class="thumbnail">
+                        <a href="https://scholar.google.com.sg/citations?user=fUtHww0AAAAJ&hl=en"><img src="img/RuimingTang.jpeg" class="img-responsive" alt="Image"></a>
+                        <figcaption class="caption text-center">
+                            <h3>Ruiming Tang
+                                <small>Huawei Noah’s Ark Lab</small>
+                            </h3>
+                            <ul class="social-links">
+                                <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                                <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                                <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
+                                <li><a href="#"><i class="fa fa-envelope"></i></a></li>
+                            </ul>
+                        </figcaption>
+                    </figure>
+                </div> -->
+                <!-- /.col-sm-6 --> 
+		
+		
+		
+		
+		
+
+            </div>
+		
+		
+            <!-- .row -->
+
+            
+        </div>
+        <!-- /.container -->
+    </section>
+    <!-- .team -->
+	
+
+    
+	
+
+<!-- Presenters’ Biography -->
+    <section id="section-speaker" class="section-wrapper about-event">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <h1>Presenter Biography</h1>
+                </div>
+            </div>
+        <div class="row text-justify">
+        <div class="col-md-12">
+                   
+		<p class="large text-muted">
+        <img src="img/wenqi.jpg" height="100" align="left" vspace="5" hspace="5">
+        <a href="https://wenqifan03.github.io/"><strong>Dr. Wenqi Fan</strong></a > is a research assistant professor of the Department of Computing at The Hong Kong Polytechnic University (PolyU). He received his Ph.D. degree from the City University of Hong Kong (CityU) in 2020. From 2018 to 2020, he was a visiting research scholar at Michigan State University. His research interests are in the broad areas of machine learning and data mining, with a particular focus on Recommender Systems, Graph Neural Networks, and Adversarial Attacks. He has published innovative papers in top-tier journals and conferences such as IEEE TKDE, KDD, WWW, NeurIPS, ICDE, IJCAI, AAAI, RecSys, WSDM, and SDM. He serves as top-tier conference (senior) program committee members (e.g., ICML, ICLR, NeurIPS, KDD, WWW, AAAI, IJCAI, CIKM, WSDM, etc.), and journal reviewers (e.g., TKDE, TIST, TKDD, TOIS, TAI, etc.). He also serves as the lead tutor of tutorials in top-tier conferences (e.g., WWW 2021, IJCAI 2021, and ICAPS 2021). More information about him can be found at <a href="https://wenqifan03.github.io/">https://wenqifan03.github.io/</a>.
+			
+		</p>
+		<p class="large text-muted">	
+        <img src="img/jiatong.jpeg" height="100" align="left" vspace="5" hspace="5">
+        <a href="https://phenixace.github.io/"><strong>Jiatong Li</strong> </a >is a Ph.D. student of the Department of Computing, The Hong Kong Polytechnic University (funded by HKPFS). He received his MSc degree in Information Technology (with Distinction, Dean's List) at the University of Melbourne, under the supervision of Dr. Lea Frermann. In 2021, He got his B.Eng. degree in Information Security at Shanghai Jiao Tong University. His research interest lies in Natural Language Processing (Large Language Models), Graph Mining, Drug Discovery, and Recommender Systems. He has published innovative papers in top-tier conferences such as IJCAI and ACL. He also serves as a Program committee member at AAAI 24. More information about him can be found at <a href="https://phenixace.github.io/">https://phenixace.github.io/</a>.
+
+		</p>
+        <p class="large text-muted">
+        <img src="img/zihuai.jpg" height="100" align="left" vspace="5" hspace="5">
+        <a href="https://scofizz.github.io/"><strong>Zihuai Zhao</strong> </a >is currently a Ph.D. student of the Department of Computing, Hong Kong Polytechnic University, under the supervision of Prof. Qing Li and Dr. Wenqi Fan. He received both his Master's degree and Bachelor's degree in Electrical Engineering at the University of Sydney in 2023 and 2020, respectively. His research interest covers Recommender Systems, Natural Language Processing, and Deep Reinforcement Learning. More information about him can be found at <a href="https://scofizz.github.io/">https://scofizz.github.io/</a>.
+
+        </p>
+        <p class="large text-muted">	
+        <img src="img/yunqing.jpg" height="100" align="left" vspace="5" hspace="5">
+        <a href="https://liuyunqing.github.io/"><strong>Yunqing Liu</strong> </a >is currently a Ph.D. student of the Department of Computing, Hong Kong Polytechnic University, under the supervision of Dr. Wenqi Fan. He received his Master's degree in Computer Science at the University of Edinburgh, under the supervision of Dr. Elizabeth Polgreen. In 2020, He got his bachelor degrees at Wuhan University. His research interest lies in Drug Discovery, Graph Neural Networks, and Natural Language Processing. More information about him can be found at <a href="https://liuyunqing.github.io/">https://liuyunqing.github.io/</a>.
+
+        </p>
+        <p class="large text-muted">	
+        <img src="img/yiqi.jpg" height="100" align="left" vspace="5" hspace="5">
+        <a href="http://cse.msu.edu/~wangy206/"><strong>Dr. Yiqi Wang</strong> </a >is an assistant professor at the College of Computer, National University of Defense Technology (NUDT). She is currently working on graph neural networks including fundamental algorithms, robustness and their applications. She has published innovative works in top-tier conferences such as ICML, KDD, WWW, EMNLP, WSDM, and AAAI. She serves as top-tier conference program committee members (e.g., WWW, AAAI, IJCAI, CIKM, and WSDM) and journal reviewers (e.g., TIST, TKDD,  TKDE and TOIS). She also serves as the leading tutor of tutorials in top-tier conferences (e.g., KDD 2020, AAAI2021, SDM 2021, KDD 2021 and ICAPS 2021). More information about her can be found at <a href="http://cse.msu.edu/~wangy206/">http://cse.msu.edu/~wangy206/</a>.
+
+                            
+        </p>
+                </div>
+            </div>
+        </div>
+ </section>
+	
+	
+	
+    
+	<!--<script type="text/javascript" id="clustrmaps" src="//cdn.clustrmaps.com/map_v2.js?cl=ffffff&w=300&t=tt&d=HLV3wzuoy5w6fdv87RM292yQj8Fx-ZVDC2rRxEMmb4c"></script>
+	
+	<script type="text/javascript" id="clustrmaps" src="//clustrmaps.com/map_v2.js?d=Acuh9imKmpIQ6hMaZY-dWCyM9D0G1hr2tY5OxSXKd64&cl=ffffff&w=300&t=tt"></script>-->
+	
+	<!-- <script type="text/javascript" id="clustrmaps" src="//clustrmaps.com/map_v2.js?d=Fq6CbZOq1h3RPZeSeuIPhIeTeTwnXH_K-1qudBFjbd8&cl=ffffff&w=300&t=tt"></script>
+       
+	 <script type="text/javascript" id="clustrmaps" src="//clustrmaps.com/map_v2.js?d=TEhFKRv_Q2W5AaLVT1YP5lKcTW9k_6-6OY9leR1znNQ&cl=ffffff&w=300&t=tt"></script>
+       -->
+    <footer class="footer">
+        <div class="copyright-section">
+            <div class="container">
+                <div class="col-md-12">
+                    <div class="copytext text-center"> <img src="img/polyu.png" height="60" alt=""><img src="img/nudt.png" height="80" alt=""><img src="img/ieee.svg" height="70" alt="">
+                </div>
+            </div>
+            <!-- .container -->
+        </div>
+        <!-- .copyright-section -->
+    </footer>
+    <!-- .footer -->
+
+</div>
+<!-- #main-wrapper -->
+
+
+<!-- jquery -->
+<script src="js/jquery-2.1.4.min.js"></script>
+
+<!-- Bootstrap -->
+<script src="js/bootstrap.min.js"></script>
+
+<!-- Plugin JavaScript -->
+<script src="js/jquery.easing.min.js"></script>
+
+<!-- Google Maps API Key - Use your own API key to enable the map feature. More information on the Google Maps API can be found at https://developers.google.com/maps/ -->
+<!---<script src="https://maps.googleapis.com/maps/api/js"></script>--->
+
+<!--<script src="js/one-page-nav.js"></script>-->
+<script src="js/scripts.js"></script>
+</body>
+</html>
